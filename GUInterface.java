@@ -58,7 +58,7 @@ public class GUInterface {
 
         // Bottom row
         JPanel bottomPanel = new JPanel(new FlowLayout());
-        ImageIcon imageIcon = new ImageIcon(imagePath);
+        ImageIcon imageIcon = new ImageIcon(getClass().getResource(imagePath));
         JLabel imageLabel = new JLabel(imageIcon);
         bottomPanel.add(imageLabel);
         frame.add(bottomPanel, BorderLayout.SOUTH);
